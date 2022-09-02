@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>promise</title>
+    </head>
+    <body>
+        <script>
+        function prom(compelet){
+
+            return new Promise(function(resolve,reject){
+                if (compelet){
+                    resolve("I am successful");
+                
+                }else{
+                    reject("i am failed");
+                }
+
+            });
+        }
+        console.log(prom(true));
+        </script>
+    </body>
+</html>
